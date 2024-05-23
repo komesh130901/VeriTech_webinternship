@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>VeriTech Software IT Services Pvt. Ltd.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo"class="rounded-full overflow-hidden">
+          <img src="data:image/jpeg;base64,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" alt="VeriTech Software Services">
+      </div>
+      <ul>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#services-container">Services</a></li>
+          <li class="item"><a href="#client-section">Our Clients</a></li>
+          <li class="item"><a href="#contact">Contact Us</a></li>
+          <li class="item"><a href="#search-bar"><input type="text" placeholder="Search.."></a></li>
+          
+      </ul>
+    </nav>
+    <main class="mx-auto max-w-screen-lg">
+      <style>
+            body{
+              background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+            </style>
+      <section class="mt-5 text-center">
+        <div class="flex justify-center">
+          <div 
+            class="bg-purple-500 p-4 pl-12 pr-12 rounded"
+          >
+            <h2 class="text-white font-bold text-3xl">VeriTech Software IT Services</h2>
+          </div>
+        </div>
+        <div class="mt-5 mb-5 px-8">
+          <p class="description"style="color:white;">
+            Welcome to VeriTech Software IT Services Pvt. Ltd, where a dedicated
+            team of professionals works together to bring innovation, creativity
+            and expertise to software industry, get to know the individuals who
+            make our company thrive
+          </p>
+        </div>
+      </section>
+      <section id="sumt" class="mt-10 mb-10 team">
+        <h2 class="font-bold text-center ourteam">Meet Our Team</h2>
+        <div id="sectionhead"class="flex justify-center">
+          <div
+            class="text-center bg-purple-400 w-auto p-2 pl-9 pr-9 rounded mt-7"
+          >
+            <h2 class="text-white font-bold">Leadership / Management Team</h2>
+          </div>
+        </div>
+        <div class="grid  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-8">
+
+          <div class="div1">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7cz8uOMpwiXoY9XOlyK8SdzkRa4TmMSBV34G-xL-eBQ&s"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                  
+                />
+              </div>
+              <div class="mt-2">
+                <!-- Founder Name -->
+                <h4 class="text-lg font-bold text-center">[Founder Name]</h4>
+                <!-- Founder / CEO -->
+                <p
+                  class="text-sm text-white-500 italic text-center"
+                >
+                  <b>Founder / CEO
+                  <br>VeriTech Software IT Services 
+                  <br><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  <ion-icon name="logo-github"></ion-icon></b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div2">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7cz8uOMpwiXoY9XOlyK8SdzkRa4TmMSBV34G-xL-eBQ&s"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <!-- Founder Name -->
+                <p class="text-lg font-bold text-center">[Founder Name]</p>
+                <!-- Founder / CEO -->
+                <p
+                  class="text-sm text-white-500 italic text-center"
+                >
+                  <b>Co-Founder / CTO
+                  <br>VeriTech Software IT Services
+                  <br><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  <ion-icon name="logo-github"></ion-icon></b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 mt-8">
+          <div class="div3">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />                                                                                  
+              </div>
+              <div class="mt-2">
+                <!-- Founder Name -->
+                <h4 class="text-lg font-bold text-center">[VP Name]</h4>
+                <!-- Founder / CEO -->
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400" style="color:black;"
+                >
+                  VP, Development & Growth
+                  <br>VeriTech Software IT Services
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div4">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                    src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <!-- Founder Name -->
+                <p class="text-lg font-bold text-center">[VP Name]</p>
+                <!-- Founder / CEO -->
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400" style="color:black;"
+                >
+                  VP, Sales & Marketing
+                  <br>VeriTech Software IT Services
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div5">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACUCAMAAAC3HHtWAAABBVBMVEX///8TtL4QoqvQ1NdhQC+5x9D/4rn/2aw5Y3z/4LYAr7oAsbsRqLFiPiwAoKv/5Ln/3rCV1Nm63eD/7tbZ8PJjOyju+PlkOCNXNCT/6b/2+PkrWnXEz9cqoKYLucRdOyu0mnzX2rqKu67j6OzZ3d91y9Jlw8tSvcaEz9VdSTxUWlM5g4VWVEtoLhJNamdQY15lMxvSu5qo2+DK6etrYVft2MJVd4xcT0RGdHMtlppqJwB4XEeTdVynjXPex6RPKhrGrY/w0alHHw9rTDmGaVNVsrN9VT2+0bnDya49DQB/wL2Bbl50XlG2pInu3bdts67/9ehptb6Mv8Wjxcycsb5zjp6KnKlN1wKGAAAKiElEQVR4nO2ce1fayhrGm3CTBEhQRLnTioBiVcCtshWEIqc9F90V1O//Uc7MJIFk7hPA/uOzlkvtqvDzea8Tgl++fOpTn1pT+Xy/18tms8dA4FOv18//aaQv+Vw/22xpmmmYPhmmobWa2X7uTwHmeu2WZhimRpVpALx2L/fRVPl+W9NYUCs6E/yPdq74cVz9LPBKQLWUYbSyH+NcsdfSRGbh1mmt/taNy7U1abcCzmnbTbn8cTgu5JyW3Vqt5try2UX1zdwSW1Yxvai+9TbPtcuMY7WqGakKUMqAXwt8a/U3y5VvmnTDqlVzcHtxcxIFOrk5vR2I2Eytvcky7dGbalVLdc7+/r6fTkOwaDqdPvh+eVHR+HCGsTnb2vRAVvXzk4P9KKaD6HlKFNP2ZrhyDMP0i+8EFtL+QUeAZlQ30dx61JKsVjvAHYbSl+cGn83U1o5oMUuNZFU/u2RxIdtqA5Ft2TXJmnSwwQk9kCvb0reCKjXWSrZci55ig8s0HwxWwonANqMZfiLkWWBRMRiI6P4tv0iNZtjOxnIslZYBg7ZFO9zeZoZ0jeGYpl0wixJX+vKsw0s3oxUGjQVWHUiDoZCeDji+hXGtyHKseiMoS5zt8pQTU+NYmYzeLmCWfVcCQ76d3KY0Bp2p2tcYoxI8fofbYulKH4CEq5hUNsWWu8tcXqu3KmnmNy56dl6huqYyqPqc7TUkGYRLV1LUh5Qf7/kWG6zaCU120EnpNDSzJU3Gyn5ENlCuAA/sIqXrVDTpVNvlnkTMkGT70YquM9Ak45njcYUugXR0kNJZaKYmF0uuZWBlVOu0LthlxwWjoknFk90wnMfgr4xMrcDoARW3Dl5dQstOQ5amn4yCJlGfPa5l1cHfzhMdKoKlT3Sdi2bsiizjx7J6gZKsdlc/VGS7HAjQRAtRm3/tIoUO49HafWFyL+fbYc35fHCe4qMZ/Esego6hDdynGxaswmhYe6iJuA7vu1MnnKdBMopr61imDZyO8TAuxONWYVK/W3pCqnYYndYnduIO/Y/0ja7z0bimCbJM09yh+WMEyCBbfFR/rD0QdLXDw4faY71rW4lE4p5BRqDxMo1+7KWQTaw4kgU0Gt/fTSGMI8Axvbsfjia2bQOuhD108vFkIEIz2aYJetmK7KEQX8qyCoXC86g7fnp6qtfr43F3krAtC1EhsvqDQ1YhyDA0Tk/rCS8qOpOpNvWRuXwFKBspEZDd/cGIJoFmMAc761Cy0gCdNA/vCTKkZIKmCfIsfUYjC6KZrONKTnx9uOL0grqlQJZAebaPdw2qa4waYJ5KfH7fQNMOn1TIrCkszoNbOlkAjdE4isL8hwMdkXWVyB4h2WWHQeZHY4SzLwZzz3TTkRIZbBvpGoMriGZQw8nfMlyl4K4xffYVpZDMrgOy2uMsI4FG3zjElQnsbv+rBp7F8hptoYA+CDJ/+7C7kGxsf5NAo4ZTOJmgZs/AgNr9Eqx+N717HBUwMjsxBP9+P7Kcb0fQZtB+KzKuUcIp2LKdX+mn9XwHNw0HbDStg2iO7h/dmLpk9ng6Bq6NHoeOa5O76EMdUP5iky3RaAf2Y5lXlcAoGv74d90hKwxHBYBUKNRHQbLhxEYRrU9csocf8KsJqzp9aJTZKdMzzBkgSI7H3jxHXO5HMJrBz91xF3454RSBh0ZJtLyEY8Z/IEKh4K/H8Wg1qfy1afnGp1sMyX94ZA6aSa5C/IO5n8wny/rv1c2YVpvdepdoH3zPPDSCTKabmS2cbHRzdfU/Ctno6uqmayuSITTy5TLRnu3ICqJZcUAwJMnsMSAeWhgZrzaXaMRpvci/ZuCZ9hMzrdAdPq2+W3k2oXnGTzMXjSgBmdLUYKclMs03n3x5NiHyzBZb5riGl6bca/fmLEkf5kRt4obZXzkjIIAWjkwz//lqMdkYmyMC+6lLgQE0jExin3VkZGaprww2Jtm3WSojCaZnciHJNC2TUSUDa4YsF0kmtZx5aCHIpMF0HWtowjOwP6B479goWQZbHrMK968QQ0pIxlsyCK1BBrqaGtmzSjDXIiNGgYBMKc3WI2OEk0EmnOSbI9MMfEjFk0h0sp9KYOuR4aYl43s+4fmvZtl6ZJoWbGnJuO+hcDJFy3AylU5LM833UFhMFbOM6LQK0wnJ+BU0bY9lmVr/19eam45prWc6Gh5LtV5GIZPdglZoZBH8/v17Dy9P1fTX9coXjEwRjDI9k/h1UCjVWJJkzNszOCJWDqKfyW3YAWXwzVHu4gEmvN8SZM8pdTLi5i+VNciVOcMWb5zsWW71D5IRFzbEV9xJGTOs4QZDGcIxQEachGWuhZKuBXMtQGb/kj2TBEVcPVAvTiT9G/W8CSKpsvv7LGuRd8s1w6H5DwU+MuXW75FR7n4MUQJQxmbJ8HkOpTqftkRGeekpZKJtmIzosyjRQt3+v2Ey6k22YTpasG/4a/NbKDCym6FEC8FltHO/9+wkSfZXpPwSYgCk6C/WKYfTaDr5updMBsn+ikAtlDcgWs9A4VTcuLVlhbu+Jf1cUHNVMtbdQfJk0N3g9fE9K4nIkisuKKXrBvqMdfeB3CYE35HSnC92y0eBHwb7rI3yyw9WXizmLzNZvAzzXi/xVIfox3PvyY+wn4+PIkGVY44Wc0gnzLoM84aNIn92mmbrZb4baayeGZu+sddGkCy2VBnQvQi8Y+U/FK8GzFa7HMEVQCte75QZYA5cbMGFY+Y/FDuKx4tIgwALopVLpTdaLAN0HLgXDhjDNFNbkHY5avh++Hpnp+SPJwnmaE5n41pGv/+m1aO5RaDFdqBWvwLFMs84GltmxgOjmtZkY0F5BVp8KwGwVTyZYKhYKeNBdDsh/u4mc8ExzI9WhmA+Mh4Y8A0fDxnhGwWwl9PNuQjMq4LIGwIrx2TAgF4wMvFtyMFBIAjlCu0o0gAV8AZjKIyl41og19jtf6XAtRdzIUMGqwBYC8iuYy6ZEAyUqJ+Msf4E5d8gW+JYOmhFAAPzLOagSYDFYjPZjuHJ9yKsMZcCA1UAPl5hnr06kZIiW2VapikDFlhuWQ2WpvfSkkxOC7VYonh6qSaV/55gPyu9ydnlOFtRiiWS93K/bDCRrmGeXauQzeXr0pP7/jC5ynRV3nGmk3o4uZOcQHM8U7Es5swABbBYLKWUZI7gLS+mZM9w9OqQvaqYhqpT9X25oKuZKmnWeHPnpopnL+QLrRLKGko9o3Ht5JkS2SIMGChQJbKIA+bMJ2mRV2WltKuSZjGXbEcFrBzGMSR5tMarC6YyBcphuVTQGu8ll+xdGiyyBhhcuyT15nkmPZ8a4mfnqihJdu3lmex8wg/420JbFsBOSY5sfTCAJpNssdKSTIarvKG//iG2bVkAciWwXu4HJLKt8baMpngKlDcRSU/FIwHZtTwZfgVpbTaubeUVmGA+bSrDZNlWBQDEmwKbDKRP7JBKkjW29nezmOnmbmf82tweFxKL7VqUZlvmQmy0fGss40nP+6OP+cNxtKC6vbb0TrsG+oF/zw7AEc7BeJaIeV5ubKkcuXBYfVJi+QewPDronete47XkX2gjR8WPDCKdDqrRaBy9v5WRjo7yf5zqU5+S0f8B6b2JSjMM4ycAAAAASUVORK5CYII="
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <!-- Founder Name -->
+                <p class="text-lg font-bold text-center">[VP Name]</p>
+                <!-- Founder / CEO -->
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400" style="color:black;"
+                >
+                  VP, Finance & Marketing
+                  <br>VeriTech Software IT Services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sumt"class="mt-10 mb-10 team">
+        <div class="flex justify-center">
+          <div
+            id="sectionhead"class="text-center bg-purple-400 w-auto p-2 pl-9 pr-9 rounded mt-7"
+          >
+            <h2 class="text-white font-bold">Development Team</h2>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mt-5">
+          <div class="div1">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Developer Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Team Lead, SE
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div2">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJkAAACUCAMAAAC3HHtWAAABBVBMVEX///8TtL4QoqvQ1NdhQC+5x9D/4rn/2aw5Y3z/4LYAr7oAsbsRqLFiPiwAoKv/5Ln/3rCV1Nm63eD/7tbZ8PJjOyju+PlkOCNXNCT/6b/2+PkrWnXEz9cqoKYLucRdOyu0mnzX2rqKu67j6OzZ3d91y9Jlw8tSvcaEz9VdSTxUWlM5g4VWVEtoLhJNamdQY15lMxvSu5qo2+DK6etrYVft2MJVd4xcT0RGdHMtlppqJwB4XEeTdVynjXPex6RPKhrGrY/w0alHHw9rTDmGaVNVsrN9VT2+0bnDya49DQB/wL2Bbl50XlG2pInu3bdts67/9ehptb6Mv8Wjxcycsb5zjp6KnKlN1wKGAAAKiElEQVR4nO2ce1fayhrGm3CTBEhQRLnTioBiVcCtshWEIqc9F90V1O//Uc7MJIFk7hPA/uOzlkvtqvDzea8Tgl++fOpTn1pT+Xy/18tms8dA4FOv18//aaQv+Vw/22xpmmmYPhmmobWa2X7uTwHmeu2WZhimRpVpALx2L/fRVPl+W9NYUCs6E/yPdq74cVz9LPBKQLWUYbSyH+NcsdfSRGbh1mmt/taNy7U1abcCzmnbTbn8cTgu5JyW3Vqt5try2UX1zdwSW1Yxvai+9TbPtcuMY7WqGakKUMqAXwt8a/U3y5VvmnTDqlVzcHtxcxIFOrk5vR2I2Eytvcky7dGbalVLdc7+/r6fTkOwaDqdPvh+eVHR+HCGsTnb2vRAVvXzk4P9KKaD6HlKFNP2ZrhyDMP0i+8EFtL+QUeAZlQ30dx61JKsVjvAHYbSl+cGn83U1o5oMUuNZFU/u2RxIdtqA5Ft2TXJmnSwwQk9kCvb0reCKjXWSrZci55ig8s0HwxWwonANqMZfiLkWWBRMRiI6P4tv0iNZtjOxnIslZYBg7ZFO9zeZoZ0jeGYpl0wixJX+vKsw0s3oxUGjQVWHUiDoZCeDji+hXGtyHKseiMoS5zt8pQTU+NYmYzeLmCWfVcCQ76d3KY0Bp2p2tcYoxI8fofbYulKH4CEq5hUNsWWu8tcXqu3KmnmNy56dl6huqYyqPqc7TUkGYRLV1LUh5Qf7/kWG6zaCU120EnpNDSzJU3Gyn5ENlCuAA/sIqXrVDTpVNvlnkTMkGT70YquM9Ak45njcYUugXR0kNJZaKYmF0uuZWBlVOu0LthlxwWjoknFk90wnMfgr4xMrcDoARW3Dl5dQstOQ5amn4yCJlGfPa5l1cHfzhMdKoKlT3Sdi2bsiizjx7J6gZKsdlc/VGS7HAjQRAtRm3/tIoUO49HafWFyL+fbYc35fHCe4qMZ/Esego6hDdynGxaswmhYe6iJuA7vu1MnnKdBMopr61imDZyO8TAuxONWYVK/W3pCqnYYndYnduIO/Y/0ja7z0bimCbJM09yh+WMEyCBbfFR/rD0QdLXDw4faY71rW4lE4p5BRqDxMo1+7KWQTaw4kgU0Gt/fTSGMI8Axvbsfjia2bQOuhD108vFkIEIz2aYJetmK7KEQX8qyCoXC86g7fnp6qtfr43F3krAtC1EhsvqDQ1YhyDA0Tk/rCS8qOpOpNvWRuXwFKBspEZDd/cGIJoFmMAc761Cy0gCdNA/vCTKkZIKmCfIsfUYjC6KZrONKTnx9uOL0grqlQJZAebaPdw2qa4waYJ5KfH7fQNMOn1TIrCkszoNbOlkAjdE4isL8hwMdkXWVyB4h2WWHQeZHY4SzLwZzz3TTkRIZbBvpGoMriGZQw8nfMlyl4K4xffYVpZDMrgOy2uMsI4FG3zjElQnsbv+rBp7F8hptoYA+CDJ/+7C7kGxsf5NAo4ZTOJmgZs/AgNr9Eqx+N717HBUwMjsxBP9+P7Kcb0fQZtB+KzKuUcIp2LKdX+mn9XwHNw0HbDStg2iO7h/dmLpk9ng6Bq6NHoeOa5O76EMdUP5iky3RaAf2Y5lXlcAoGv74d90hKwxHBYBUKNRHQbLhxEYRrU9csocf8KsJqzp9aJTZKdMzzBkgSI7H3jxHXO5HMJrBz91xF3454RSBh0ZJtLyEY8Z/IEKh4K/H8Wg1qfy1afnGp1sMyX94ZA6aSa5C/IO5n8wny/rv1c2YVpvdepdoH3zPPDSCTKabmS2cbHRzdfU/Ctno6uqmayuSITTy5TLRnu3ICqJZcUAwJMnsMSAeWhgZrzaXaMRpvci/ZuCZ9hMzrdAdPq2+W3k2oXnGTzMXjSgBmdLUYKclMs03n3x5NiHyzBZb5riGl6bca/fmLEkf5kRt4obZXzkjIIAWjkwz//lqMdkYmyMC+6lLgQE0jExin3VkZGaprww2Jtm3WSojCaZnciHJNC2TUSUDa4YsF0kmtZx5aCHIpMF0HWtowjOwP6B479goWQZbHrMK968QQ0pIxlsyCK1BBrqaGtmzSjDXIiNGgYBMKc3WI2OEk0EmnOSbI9MMfEjFk0h0sp9KYOuR4aYl43s+4fmvZtl6ZJoWbGnJuO+hcDJFy3AylU5LM833UFhMFbOM6LQK0wnJ+BU0bY9lmVr/19eam45prWc6Gh5LtV5GIZPdglZoZBH8/v17Dy9P1fTX9coXjEwRjDI9k/h1UCjVWJJkzNszOCJWDqKfyW3YAWXwzVHu4gEmvN8SZM8pdTLi5i+VNciVOcMWb5zsWW71D5IRFzbEV9xJGTOs4QZDGcIxQEachGWuhZKuBXMtQGb/kj2TBEVcPVAvTiT9G/W8CSKpsvv7LGuRd8s1w6H5DwU+MuXW75FR7n4MUQJQxmbJ8HkOpTqftkRGeekpZKJtmIzosyjRQt3+v2Ey6k22YTpasG/4a/NbKDCym6FEC8FltHO/9+wkSfZXpPwSYgCk6C/WKYfTaDr5updMBsn+ikAtlDcgWs9A4VTcuLVlhbu+Jf1cUHNVMtbdQfJk0N3g9fE9K4nIkisuKKXrBvqMdfeB3CYE35HSnC92y0eBHwb7rI3yyw9WXizmLzNZvAzzXi/xVIfox3PvyY+wn4+PIkGVY44Wc0gnzLoM84aNIn92mmbrZb4baayeGZu+sddGkCy2VBnQvQi8Y+U/FK8GzFa7HMEVQCte75QZYA5cbMGFY+Y/FDuKx4tIgwALopVLpTdaLAN0HLgXDhjDNFNbkHY5avh++Hpnp+SPJwnmaE5n41pGv/+m1aO5RaDFdqBWvwLFMs84GltmxgOjmtZkY0F5BVp8KwGwVTyZYKhYKeNBdDsh/u4mc8ExzI9WhmA+Mh4Y8A0fDxnhGwWwl9PNuQjMq4LIGwIrx2TAgF4wMvFtyMFBIAjlCu0o0gAV8AZjKIyl41og19jtf6XAtRdzIUMGqwBYC8iuYy6ZEAyUqJ+Msf4E5d8gW+JYOmhFAAPzLOagSYDFYjPZjuHJ9yKsMZcCA1UAPl5hnr06kZIiW2VapikDFlhuWQ2WpvfSkkxOC7VYonh6qSaV/55gPyu9ydnlOFtRiiWS93K/bDCRrmGeXauQzeXr0pP7/jC5ynRV3nGmk3o4uZOcQHM8U7Es5swABbBYLKWUZI7gLS+mZM9w9OqQvaqYhqpT9X25oKuZKmnWeHPnpopnL+QLrRLKGko9o3Ht5JkS2SIMGChQJbKIA+bMJ2mRV2WltKuSZjGXbEcFrBzGMSR5tMarC6YyBcphuVTQGu8ll+xdGiyyBhhcuyT15nkmPZ8a4mfnqihJdu3lmex8wg/420JbFsBOSY5sfTCAJpNssdKSTIarvKG//iG2bVkAciWwXu4HJLKt8baMpngKlDcRSU/FIwHZtTwZfgVpbTaubeUVmGA+bSrDZNlWBQDEmwKbDKRP7JBKkjW29nezmOnmbmf82tweFxKL7VqUZlvmQmy0fGss40nP+6OP+cNxtKC6vbb0TrsG+oF/zw7AEc7BeJaIeV5ubKkcuXBYfVJi+QewPDronete47XkX2gjR8WPDCKdDqrRaBy9v5WRjo7yf5zqU5+S0f8B6b2JSjMM4ycAAAAASUVORK5CYII="
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Developer Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div3">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Developer Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div4">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Developer Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><br><br><br>
+        <div class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 mt-8">
+          <div class="div5">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Developer Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div6">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Developer Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div7">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Developer Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sumt"class="mt-10 mb-10 team">
+        <div class="flex justify-center">
+          <div
+            id="sectionhead"class="text-center bg-purple-400 w-auto p-2 pl-9 pr-9 rounded mt-7"
+          >
+            <h2 class="text-white font-bold">Sales and Marketing Team</h2>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mt-8">
+          <div class="div1">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Employee Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Team Lead
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div2">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Employee Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Sales Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div3">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Employee Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Sales Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div4">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <h4 class="text-lg font-bold text-center">[Employee Name]</h4>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Sales Officer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br>
+        <div class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 mt-8">
+          <div class="div5">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Employee Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Marketing Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div6">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Employee Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Marketing Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div7">
+            <div class="flex flex-col items-center">
+              <div class="rounded-full overflow-hidden h-24 w-24">
+                <!-- Profile Pic -->
+                <img
+                  src="data:image/png;base64,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"
+                  alt="Profile Image"
+                  class="object-fill h-full w-full"
+                />
+              </div>
+              <div class="mt-2">
+                <p class="text-lg font-bold text-center">[Employee Name]</p>
+
+                <p
+                  class="text-sm text-white-500 italic text-center text-purple-400"
+                >
+                  Marketing Officer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sumt"class="mt-10 mb-10 team">
+
+        <div class="footer-clean">
+          <footer>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Careers</h3>
+                    <ul>
+                        <li><a href="#">Job openings</a></li>
+                        <li><a href="#">Employee success</a></li>
+                        <li><a href="#">Benefits</a></li>
+                    </ul>
+                </div>
+                  <br />
+                <div id="socialI"class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                  <p class="copyright">VeriTech Software IT Services Pvt. Ltd. © 2023</p>
+                </div>
+                </div>  
+              </div>
+          </footer>
+        </div>
+        <footer>
+          <p>&copy; VeriTech Software IT Services. All Rights Reserved.</p>
+        </footer>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    </main>
+    <footer>
+      <p>&copy; VeriTech Software IT Services. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+

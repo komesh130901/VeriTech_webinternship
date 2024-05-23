@@ -1,0 +1,283 @@
+
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  display: flex;
+  background-color:rgb(99, 133, 211);
+}
+
+#logo{
+  margin: 10px 15px;
+  height: 35px;
+  width: 36px;
+}
+
+ul{
+  display:flex;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: medium;
+  align-content: end;
+}
+
+#navbar ul li a{
+  display:block;
+  padding:5px 15px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing:initial;
+  background-color: #e6eaed;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.description {
+  font-weight: 600;
+  color: #8a44a8;
+}
+
+main .description {
+  font-weight: 600;
+  color:darkgreen;
+}
+
+#sumt h2.ourteam {
+  font-size: 12px;
+  font-weight: bold;
+  color: #522b04;
+}
+
+#sumt {
+  align:center;
+  align-items: center;
+  background-color: #e3cae0;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+#sumt img{
+  border-radius: 50%;
+  border: 3px solid #418a76;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Adjustments for headings */
+h2 {
+  font-size: 34px;
+}
+
+/* Adjustments for description */
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.team section {
+  padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+
+  .team {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .team {
+    padding: 15px;
+  }
+
+  .team img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .team {
+    padding: 10px;
+  }
+  .overteam{
+    font-size: 8px;
+  }
+}
+
+/* Padding for div classes */
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media Screen and (max-width:600px)
+{
+  h2{
+    font-size: 36px ;
+    line-height: 50px ;
+  }
+}
+
+
+
+.footer-clean {
+  padding:50px 0;
+  color:#4b4c4d;
+  text-align: center;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+  text-align: center;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+  display: inline;
+  text-align: center;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+  list-style: none;
+}
+
+.footer-clean .item.social {
+  text-align:center;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+  
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+    display:inline-block;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+
+.item ul li a:hover{
+  color: white;
+  background-color: black;
+  scroll-behavior: smooth;
+  display:block;
+  padding:5px 15px;
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+#foot ul li a{
+  display:block;
+  padding:5px 15px;
+}
+
+
+
